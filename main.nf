@@ -10,6 +10,7 @@ process firstProcess {
     executor 'awsbatch'
     queue 'maestro3-small-machines'
     errorStrategy = 'finish'
+    tag 'POC'
 
     output:
     file(f1)
@@ -28,6 +29,7 @@ process printProcess {
     executor 'awsbatch'
     queue 'maestro3-small-machines'
     errorStrategy = 'finish'
+    tag 'POC'
 
 
     input:
